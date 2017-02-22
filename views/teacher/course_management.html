@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Management Course</title>
+
+    <link rel="stylesheet" href="../../components/AlertifyJS/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="../../components/AlertifyJS/build/css/themes/default.min.css" />
+    <link rel="stylesheet" href="../../components/AlertifyJS/build/css/themes/semantic.min.css" />
+
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="../../components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link href="../../components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <!-- ILT theme -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/learning-obecjet.css">
+    <link rel="stylesheet" href="../../css/bootstrap-nav-wizard.css">
+    <link rel="stylesheet" href="../../css/assessments-management.css">
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-custom">
+
+    <header class="navbar navbar-fixed-top" role="banner">
+        <div class="container ILT-navbar-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../home/home.html/home/main">Logo</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse ILT-navbar" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right page-scroll">
+                    <li>
+                        <a href="../home/home.html/home/main">Home</a>
+                    </li>
+                    <li>
+                        <a href="../home/home.html/home/learningOutcome">Services</a>
+                    </li>
+                    <li>
+                        <a href="../home/home.html/home/aboutUs">About us</a>
+                    </li>
+                    <li>
+                        <a href="../home/home.html/home/contactUs">Contact us</a>
+                    </li>
+                    <li>
+                        <div class="search-container">
+                            <input type="text" placeholder="Search" id="search-input">
+                            <i class="glyphicon glyphicon-search search-icon"></i>
+                        </div>
+                    </li>
+                    <li class="dropdown user user-menu">
+                        <a href="../home/home.html/profile" class="profile-image dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-plaid-shirt-guy.png" class="profile-image img-circle"> Yazan A.Aabed <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header bg-light-blue">
+                                <img src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-plaid-shirt-guy.png" class="img-circle" alt="User Image">
+                                <p>
+                                    Yazan A.Aabed - Front End Engineer
+                                </p>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-info ILT-primary-btn profile-view btn-flat">
+                                        <i class="glyphicon glyphicon-user"></i> Profile
+                                    </a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-info ILT-secondary-btn sign-out btn-flat">
+                                        <i class="glyphicon glyphicon-log-out"></i> Sign out
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </header>
+
+
+    <div class="ILT-container">
+        <div class="container course-management">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <div class="box box-info">
+                        <div class="box-header">
+                            <!-- tools box -->
+                            <div class="pull-right box-tools">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </a>
+                            </div><!-- /. tools -->
+
+                            <i class="fa fa-map-marker"></i>
+                            <h3 class="box-title">
+                                <i class="glyphicon glyphicon-hand-right"></i> Current Courses
+                            </h3>
+                        </div>
+                        <div class="box-body no-padding">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <span class="badge">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                    </span>
+                                    <i class="glyphicon glyphicon-book"></i> Algorithms
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                    </span>
+                                    <i class="glyphicon glyphicon-book"></i> Operating System
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                    </span>
+                                    <i class="glyphicon glyphicon-book"></i> HCI
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                    </span>
+                                    <i class="glyphicon glyphicon-book"></i> Network
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                    </span>
+                                    <i class="glyphicon glyphicon-book"></i> Database
+                                </li>
+                            </ul>
+                        </div><!-- /.box-body-->
+                        <div class="box-footer clearfix no-border">
+                            <button class="btn ILT-primary-btn add-course btn-info pull-right">
+                                <i class="glyphicon glyphicon-plus"></i> Add Course
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="box box-info">
+                        <div class="box-header">
+                            <!-- tools box -->
+                            <div class="pull-right box-tools">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </a>
+                            </div><!-- /. tools -->
+
+                            <i class="fa fa-map-marker"></i>
+                            <h3 class="box-title">
+                                <i class="glyphicon glyphicon-tag"></i> Recent Activities
+                            </h3>
+                        </div>
+                        <div class="box-body no-padding">
+
+                        </div><!-- /.box-body-->
+                        <div class="box-footer">
+
+                        </div>
+                    </div>
+
+                    <div class="box box-info calender-box">
+                        <div class="box-header">
+                            <!-- tools box -->
+                            <div class="pull-right box-tools">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </a>
+                            </div><!-- /. tools -->
+
+                            <i class="fa fa-map-marker"></i>
+                            <h3 class="box-title">
+                                <i class="glyphicon glyphicon-calendar"></i> Events
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            <div id="calendar"></div>
+                        </div><!-- /.box-body-->
+                    </div>
+
+                    <div class="box box-info">
+                        <div class="box-header">
+                            <!-- tools box -->
+                            <div class="pull-right box-tools">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </a>
+                            </div><!-- /. tools -->
+
+                            <i class="fa fa-map-marker"></i>
+                            <h3 class="box-title">
+                                <i class="glyphicon glyphicon-envelope"></i> Quick Email
+                            </h3>
+                        </div>
+                        <div class="box-body no-padding">
+                        </div><!-- /.box-body-->
+                        <div class="box-footer">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 mange-course">
+                    <h4>Management Course</h4>
+
+                    <div class="box box-success">
+                        <div class="box-header">
+                            <!-- tools box -->
+                            <div class="pull-right box-tools">
+
+                            </div><!-- /. tools -->
+
+                            <i class="fa fa-map-marker"></i>
+                            <h3 class="box-title">
+                                <i class="glyphicon glyphicon-th-list"></i> Design Course
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="course_name" class="col-sm-2">Course Name</label>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control" id="course_name" placeholder="Course Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Description</label>
+                                    <div class="col-sm-6">
+                                        <textarea class="form-control" rows="3" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Broad Field</label>
+                                    <div class="col-sm-5">
+                                        <select class="form-control">
+                                            <option value="IT">Information Communication Technology</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Narrow Field</label>
+                                    <div class="col-sm-3">
+                                        <select class="form-control">
+                                            <option value="CS">Computer Science</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group add-knowledge-area">
+                                    <label class="col-sm-2">Knowledge Area</label>
+                                    <div class="col-sm-4">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="CS">Operating System</option>
+                                            </select>
+                                            <div  data-toggle="tooltip" data-placement="left" title="Add New Assessment" class="input-group-addon add-new-knowledge-area" id="add-new-knowledge-area">
+                                                <i class="glyphicon glyphicon-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="knowledge-unit-section" id="knowledge-unit-section">
+                                <div class="knowledge-unit-header">
+                                    <div class="line"></div>
+                                    <div class="title-knowledge">
+                                        <span class="truncate">COURSE Knowledge Units</span>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+
+                                <div class="knowledge-unit-body" id="inner-content-div">
+                                    <div class="row unit-scroll">
+                                        <div class="col-sm-4">
+                                            <div class="box box-success">
+                                                <div class="box-header no-padding">
+                                                    <!-- tools box -->
+                                                    <div class="pull-right box-tools">
+                                                        <a href="#">
+                                                            <i class="glyphicon glyphicon-refresh"></i>
+                                                        </a>
+                                                    </div><!-- /. tools -->
+
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <h3 class="box-title">
+                                                        <i class="glyphicon glyphicon-inbox"></i> Basic Analysis
+                                                    </h3>
+                                                </div>
+                                                <div class="box-body no-padding">
+
+                                                    <div>
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-tabs" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#outcomes" aria-controls="outcomes" role="tab" data-toggle="tab">Outcomes</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#topics" aria-controls="topics" role="tab" data-toggle="tab">Topics</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="outcomes">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div role="tabpanel" class="tab-pane" id="topics">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-id="1" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div><!-- /.box-body-->
+                                                <div class="box-footer clearfix no-border"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box box-success">
+                                                <div class="box-header no-padding">
+                                                    <!-- tools box -->
+                                                    <div class="pull-right box-tools">
+                                                        <a href="#">
+                                                            <i class="glyphicon glyphicon-refresh"></i>
+                                                        </a>
+                                                    </div><!-- /. tools -->
+
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <h3 class="box-title">
+                                                        <i class="glyphicon glyphicon-inbox"></i> Basic Analysis
+                                                    </h3>
+                                                </div>
+                                                <div class="box-body no-padding">
+
+                                                    <div>
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-tabs" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#outcomes1" aria-controls="outcomes1" role="tab" data-toggle="tab">Outcomes</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#topics1" aria-controls="topics1" role="tab" data-toggle="tab">Topics</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="outcomes1">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="topics1">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div><!-- /.box-body-->
+                                                <div class="box-footer clearfix no-border"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box box-success">
+                                                <div class="box-header no-padding">
+                                                    <!-- tools box -->
+                                                    <div class="pull-right box-tools">
+                                                        <a href="#">
+                                                            <i class="glyphicon glyphicon-refresh"></i>
+                                                        </a>
+                                                    </div><!-- /. tools -->
+
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <h3 class="box-title">
+                                                        <i class="glyphicon glyphicon-inbox"></i> Basic Analysis
+                                                    </h3>
+                                                </div>
+                                                <div class="box-body no-padding">
+
+                                                    <div>
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-tabs" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#outcomes2" aria-controls="outcomes2" role="tab" data-toggle="tab">Outcomes</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#topics2" aria-controls="topics2" role="tab" data-toggle="tab">Topics</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="outcomes2">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="topics2">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div><!-- /.box-body-->
+                                                <div class="box-footer clearfix no-border"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="box box-success">
+                                                <div class="box-header no-padding">
+                                                    <!-- tools box -->
+                                                    <div class="pull-right box-tools">
+                                                        <a href="#">
+                                                            <i class="glyphicon glyphicon-refresh"></i>
+                                                        </a>
+                                                    </div><!-- /. tools -->
+
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <h3 class="box-title">
+                                                        <i class="glyphicon glyphicon-inbox"></i> Basic Analysis
+                                                    </h3>
+                                                </div>
+                                                <div class="box-body no-padding">
+
+                                                    <div>
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-tabs" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#outcomes3" aria-controls="outcomes3" role="tab" data-toggle="tab">Outcomes</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#topics3" aria-controls="topics3" role="tab" data-toggle="tab">Topics</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="outcomes3">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="topics3">
+                                                                <div class="tab-scroll">
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                    <div class="checkbox-container truncate">
+                                                                        <input type="checkbox" value="">
+                                                                        <span data-toggle="tooltip" data-placement="top" title="Understand the formal definition of big O">Understand the formal definition of big O</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div><!-- /.box-body-->
+                                                <div class="box-footer clearfix no-border"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body-->
+                        <div class="box-footer"></div>
+                    </div>
+
+                    <div class="box box-primary">
+                        <div class="box-header">
+                            <!-- tools box -->
+                            <div class="pull-right box-tools">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </a>
+                            </div><!-- /. tools -->
+
+                            <i class="fa fa-map-marker"></i>
+                            <h3 class="box-title">
+                                <i class="glyphicon glyphicon-th-large"></i> Activity & Resources
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="box box-primary">
+                                        <div class="box-header">
+                                            <i class="fa fa-map-marker"></i>
+                                            <h3 class="box-title">
+                                                <i class="glyphicon glyphicon-list-alt"></i> ASSESSMENT
+                                            </h3>
+                                        </div>
+                                        <div class="box-body no-padding">
+                                            <div class="box-body-header">
+                                                <div class="pull-right box-tools">
+                                                    <span data-toggle="tooltip" id="add_new_assessment" data-placement="left" title="Add New Assessment">
+                                                        <i class="glyphicon glyphicon-plus"></i>
+                                                    </span>
+                                                </div><!-- /. tools -->
+                                                <span>Enter To New Assessment</span>
+                                            </div>
+                                            <div class="assessment-conatiner">
+                                                <div class="checkbox-container truncate">
+                                                    <input type="checkbox" value="">
+                                                    <span>First Exam</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Learning Object Mangment modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="learningObjectManagement" id="learningObjectManagement">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <span class="title-modal"><i class="glyphicon glyphicon-hand-up"></i> Operating System</span> <i class="glyphicon glyphicon-chevron-right"></i> Algorithmic Strategies <i class="glyphicon glyphicon-chevron-right"></i> Describe
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container-learningObjectManagement">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#linkedLearningObjects" aria-controls="outcomes3" role="tab" data-toggle="tab">
+                                            Linked Learning Objects
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#recommendedLearningObject" aria-controls="topics3" role="tab" data-toggle="tab">
+                                            Recommended Learning Objects
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#addLearningObject" aria-controls="topics3" role="tab" data-toggle="tab">
+                                            Add New Learning Objects
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="linkedLearningObjects">
+                                        <div class="list-group">
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Lined Learn 1</h4>
+                                                <p class="list-group-item-text">
+                                                    Description Lined Learn 1
+                                                </p>
+                                            </span>
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Lined Learn 1</h4>
+                                                <p class="list-group-item-text">
+                                                    Description Lined Learn 1
+                                                </p>
+                                            </span>
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Lined Learn 1</h4>
+                                                <p class="list-group-item-text">
+                                                    Description Lined Learn 1
+                                                </p>
+                                            </span>
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Lined Learn 1</h4>
+                                                <p class="list-group-item-text">
+                                                    Description Lined Learn 1
+                                                </p>
+                                            </span>
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Lined Learn 1</h4>
+                                                <p class="list-group-item-text">
+                                                    Description Lined Learn 1
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="recommendedLearningObject">
+                                        <span class="list-group-item">
+                                            <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                        </span>
+                                        <span class="list-group-item">
+                                            <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                        </span>
+                                        <span class="list-group-item">
+                                            <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                        </span>
+                                        <span class="list-group-item">
+                                            <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                        </span>
+
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <button type="button" class="btn btn-info pull-right ILT-primary-btn" data-dismiss="modal">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="addLearningObject">
+                                        <div class="row">
+                                            <div class="col-xs-8 col-sm-offset-2">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label for="Title" class="col-sm-2 control-label">Title</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="Title" placeholder="Title">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Description" class="col-sm-2 control-label">Description</label>
+                                                        <div class="col-sm-10">
+                                                            <textarea class="form-control" id="Description" placeholder="Description" rows="3">
+                                                            </textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Keywords" class="col-sm-2 control-label">Keywords</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="Keywords" placeholder="Keywords">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12">
+                                                            <button type="submit" class="btn btn-info ILT-primary-btn pull-right">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+
+
+
+
+    <!-- Learning Object Mangment modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="assessmentsManagement" id="assessmentsManagement">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <span class="title-modal"><i class="glyphicon glyphicon-hand-up"></i> Assessment</span> <i class="glyphicon glyphicon-chevron-right"></i> Assessment Policy
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <section>
+                            <div class="wizard">
+                                <div class="wizard-inner">
+                                    <div class="connecting-line"></div>
+                                    <ul class="nav nav-tabs" role="tablist">
+
+                                        <li role="presentation" class="active">
+                                            Assessment Policy
+                                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                                                <span class="round-tab">
+                                                    1
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li role="presentation" class="disabled">
+                                            Assessment Outcomes
+                                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                                                <span class="round-tab">
+                                                    2
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            Assign Question
+                                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                                <span class="round-tab">
+                                                    3
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li role="presentation" class="disabled">
+                                            Availability
+                                            <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
+                                                <span class="round-tab">
+                                                    4
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            Access
+                                            <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab" title="Step 5">
+                                                <span class="round-tab">
+                                                    5
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <button type="button" class="btn btn-info ILT-primary-btn next-step">
+                                                Next <i class="glyphicon glyphicon-chevron-right"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" id="step1">
+                                        <div class="row">
+                                            <div class="col-xs-8 col-sm-offset-2">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Assessment</label>
+                                                        <div class="col-sm-5">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Grade" class="col-sm-2 control-label">Grade</label>
+                                                        <div class="col-sm-5">
+                                                            <input type="text" class="form-control" id="Grade" placeholder="Grade">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step2">
+                                        <div class="title-modal">
+                                            <i class="glyphicon glyphicon-th-list"></i> OutComes
+                                        </div>
+                                        <div class="list-group-item">
+                                             <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                            <span class="label label-info arrowed pull-right">Skill</span>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                            <span class="label label-primary arrowed pull-right">Knowledge</span>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                            <span class="label label-warning arrowed pull-right">Knowledge</span>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label>
+                                                <input type="checkbox" /> Recommended
+                                            </label>
+                                            <span class="label label-warning arrowed pull-right">Knowledge</span>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step3">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-5 control-label">Question Number</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="text" class="form-control" id="qNumber" placeholder="Question Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-5 control-label">New/Sub Question</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Grade" class="col-sm-5 control-label">Question</label>
+                                                        <div class="col-sm-7">
+                                                            <textarea class="form-control" id="Question" placeholder="Question"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="qGrade" class="col-sm-5 control-label">Grade</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="text" class="form-control" id="qGrade" placeholder="Grade">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="title-modal"><i class="glyphicon glyphicon-send"></i> Choose OutComes</div>
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        <input type="radio" name="outcomes" /> Recommended
+                                                    </label>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        <input type="radio" name="outcomes" /> Recommended
+                                                    </label>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        <input type="radio" name="outcomes" /> Recommended
+                                                    </label>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        <input type="radio" name="outcomes" /> Recommended
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row qChoose">
+                                            <div class="col-sm-12">
+                                                <div class="title-modal"><i class="glyphicon glyphicon-send"></i> Choose Question</div>
+
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        Recommended
+                                                    </label>
+                                                    <div class="pull-right">
+                                                        <i class="glyphicon glyphicon-trash"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        Recommended
+                                                    </label>
+                                                    <div class="pull-right">
+                                                        <i class="glyphicon glyphicon-trash"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        Recommended
+                                                    </label>
+                                                    <div class="pull-right">
+                                                        <i class="glyphicon glyphicon-trash"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <label>
+                                                        Recommended
+                                                    </label>
+                                                    <div class="pull-right">
+                                                        <i class="glyphicon glyphicon-trash"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step4">
+
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step5">
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</body>
+
+<script type="text/javascript" src="../../components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../components/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../components/AlertifyJS/build/alertify.min.js"></script>
+<script type="text/javascript" src="../../components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../components/momentjs/moment.js" type="text/javascript"></script>
+<script src="../../components/fullcalendar/dist/fullcalendar.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../components/jQuery-slimScroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="../../js/main.js"></script>
+<script src="../../js/main-actions.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../js/progress-bar.js"></script>
+</html>

@@ -1,0 +1,126 @@
+.box-body-header {
+    background-color: #DCDCDC;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    line-height: 12px;
+}
+
+.box-body-header i {
+    top: 0;
+}
+
+.assessment-conatiner {
+    padding: 10px;
+}
+
+.box-body-header [data-toggle="tooltip"] {
+    cursor: pointer;
+}
+
+.main-student-tabs .nav-tabs>li.active>a,
+.main-student-tabs .nav-tabs>li.active>a:hover,
+.main-student-tabs .nav-tabs>li.active>a:focus {
+    border-bottom-color: transparent;
+    background-color: #F88E1D;
+    color: #FFF;
+    border: 0;
+    border-radius: 0;
+}
+
+.main-student-tabs .box-title {
+    display: inline-block;
+    padding: 10px 0 10px 5px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    float: left;
+    cursor: default;
+}
+
+.main-student-tabs .student-header {
+    border-bottom: 0;
+}
+
+.main-student-tabs .course-title {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 8px;
+}
+
+.main-student-tabs #home {
+    margin-top: 40px;
+}
+
+.main-student-tabs #home .course-description {
+    background-color: #FFF;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.main-student-tabs .box-title.learning-objects {
+    display: block;
+    float: initial;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-student-tabs .learning-object-container {
+    background-color: #FFF;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.main-student-tabs #learningOutcomeStudent {
+    margin-top: 40px;
+}
+
+#learningOutcomeStudent h4 {
+    margin: 0 0 5px 0;
+}
+
+#learningOutcomeStudent .box-header {
+    padding-bottom: 0;
+}
+
+.badge {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.progress-description-achieved {
+    border-left: 5px solid #47A147;
+    padding-left: 5px;
+}
+
+.progress-description-unachieved {
+    border-left: 5px solid #F2B968;
+    padding-left: 5px;
+}
+
+.progress-description-desired {
+    border-left: 5px solid #d9534f;
+    padding-left: 5px;
+}
+
+#learningOutcomeStudent .de {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.list-achive-items .box-header h5 {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.list-achive-items .well {
+    padding: 10px 30px 0 10px;
+}

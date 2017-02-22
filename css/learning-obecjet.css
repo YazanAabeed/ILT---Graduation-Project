@@ -1,0 +1,45 @@
+.box-body-header [data-toggle="tooltip"] {
+    cursor: pointer;
+}
+
+#learningObjectManagement .nav-tabs>li.active>a,
+#learningObjectManagement .nav-tabs>li.active>a:hover,
+#learningObjectManagement .nav-tabs>li.active>a:focus {
+    padding: 20px 30px;
+    border-top: 3px solid #69B5EF;
+    color: #69B5EF;
+    border-radius: 0;
+}
+
+#learningObjectManagement  .nav-tabs> li> a {
+    padding: 20px 30px;
+    font-size: 16px;
+}
+
+.container-learningObjectManagement {
+    padding: 10px 39px;
+}
+
+#learningObjectManagement .title-modal {
+    font-size: 20px;
+    color: #69B5EF;
+}
+
+#linkedLearningObjects,
+#recommendedLearningObject,
+#addLearningObject {
+    padding: 10px 0 0 0;
+}
+
+#linkedLearningObjects .list-group-item,
+#recommendedLearningObject .list-group-item {
+    margin-bottom: 10px;
+}
+
+#linkedLearningObjects .list-group-item.active,
+#linkedLearningObjects .list-group-item.active:hover,
+#linkedLearningObjects .list-group-item.active:focus {
+    background-color: #69B5EF;
+    background-image: initial;
+    border: 0;
+}
